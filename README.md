@@ -1,4 +1,4 @@
-# SocialNetworkProject
+# SAnGreeA
 
 ## Requisiti
 - Python 3.12
