@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 # Usage
 ## Single Use Test
-Each of the files in analysis_files analyse different aspects of the algorithm
+- Each of the files in analysis_files analyse different aspects of the algorithm
     - time_analysis: measures how much the algorithm takes to execute (calculated on an avarage)
     - utility_analysis: measures how much information was lost after the anonyimization of the dataset
     - horizontalTimeAnalysis: measures how much time the algorithms takes (number of QI attributes customizable)
