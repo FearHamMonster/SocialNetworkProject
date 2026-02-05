@@ -35,6 +35,6 @@ To automatically execute tests in batch with predefined values, simply execute t
 (they each will take several minutes unless parameters are manually changed inside)
 These batch tests will automtically save the results as plots, saved in the plots directory.
 
-The already existing plots in plots are the results of executing each of the batch tests.
+The already existing plots in the plots folder are the results of executing each of the batch tests.
 
 
