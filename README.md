@@ -45,7 +45,7 @@ source venv/bin/activate   # Linux/macOS
 pip install -r requirements.txt  
 ```
 
-# Slides 
+## Slides 
 The slides that discuss the analysis of the project are found in 
 https://docs.google.com/presentation/d/12mmCoUri2qxXPi8Uhh5uqPxC353_enuRwPkkrUUDZDg/edit?usp=sharing
 
@@ -66,7 +66,7 @@ to leave it True.
 
 ## Multiple Tests
 To automatically execute tests in batch with predefined values, simply execute the batch files in batch_tests,
-(they each will take several minutes unless parameters are manually changed inside)
+(they each will take several minutes unless parameters are manually changed inside).
 These batch tests will automtically save the results as plots, saved in the plots directory.
 
 The already existing plots in the plots folder are the results of executing each of the batch tests.
