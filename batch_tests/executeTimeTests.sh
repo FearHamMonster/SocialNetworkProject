@@ -12,7 +12,7 @@ n_LIST=" 50 100 200 300 400 500 1000"
 # Realistic dataset and graph
 for k in $k_LIST; do
  for n in $n_LIST; do
-  python -m "analysis_files.timeAnalysis" --n $n --k $k --csv $CSV_FILE --real-dataset False --graph-type 0 --seed 42
+  python -m "analysis_files.timeAnalysis" --n $n --k $k --csv $CSV_FILE --real-dataset False --graph-type 0 --seed 42 --print False
  done
 done
 
@@ -23,7 +23,7 @@ python -m "plotting_files.plotTimeResults" --csv $CSV_FILE --title "Realistic da
 # Realistic dataset and graph with different dataset/graph each repetition
 for k in $k_LIST; do
  for n in $n_LIST; do
-  python -m "analysis_files.timeAnalysis" --n $n --k $k --csv $CSV_FILE --real-dataset False --graph-type 0 --seed 42 --same-dataset False
+  python -m "analysis_files.timeAnalysis" --n $n --k $k --csv $CSV_FILE --real-dataset False --graph-type 0 --seed 42 --same-dataset False --print False
  done
 done
 
@@ -35,7 +35,7 @@ python -m "plotting_files.plotTimeResults" --csv $CSV_FILE --title "Realistic da
 # Unrealistic dataset and graph 
 for k in $k_LIST; do
  for n in $n_LIST; do
-  python -m "analysis_files.timeAnalysis" --n $n --k $k --csv $CSV_FILE --real-dataset False --random-values True --graph-type 1 --avarage-degree 10 --seed 42
+  python -m "analysis_files.timeAnalysis" --n $n --k $k --csv $CSV_FILE --real-dataset False --random-values True --graph-type 1 --avarage-degree 10 --seed 42 --print False
  done
 done
 

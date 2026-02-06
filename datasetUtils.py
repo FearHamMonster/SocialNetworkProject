@@ -111,4 +111,3 @@ def get_index(bins, value):
     return index
     
 
-distr = get_conditional_probabilities("age", "marital-status")

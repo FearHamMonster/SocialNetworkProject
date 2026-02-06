@@ -11,8 +11,8 @@ ATTR_NUM_LIST="1 2 3 4 5 6"
 
 # Realistic dataset and graph
  for ATTR_NUM in $ATTR_NUM_LIST; do
-  python -m "analysis_files.horizontalTimeAnalysis" --n 500 --k 3 --csv $CSV_FILE --real-dataset False --graph-type 0 --seed 42 --QI-attr $ATTR_NUM
+  python -m "analysis_files.horizontalTimeAnalysis" --n 500 --k 3 --csv $CSV_FILE --real-dataset False --graph-type 0 --seed 42 --QI-attr $ATTR_NUM --print False
  done
 
-python -m "plotting_files.plotHorizontalTimeResults" --csv $CSV_FILE --title "Horizontal Time Tests"
+python -m "plotting_files.plotHorizontalTimeResults" --csv $CSV_FILE --title "Horizontal Time Tests" 
 

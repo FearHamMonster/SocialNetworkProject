@@ -2,6 +2,7 @@ import csv
 import matplotlib.pyplot as plt
 import argparse
 from collections import defaultdict
+import numpy as np
 
 def main():
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
@@ -12,6 +13,7 @@ def main():
     
     k_to_times = defaultdict(list)
     xvalues = []
+    max_time = 0
     with open(args.csv, newline="") as f:
         reader = csv.reader(f)
         for k, n, time in reader:
@@ -23,10 +25,14 @@ def main():
                 xvalues.append(n)
             
             k_to_times[k].append(time)
+            if max_time < time:
+                max_time = time
+            
     for k in k_to_times.keys():
         plt.plot(xvalues, k_to_times[k], label="k =" + str(k))
     plt.xlabel("Number of nodes")
     plt.ylabel("Time(s)")
+    plt.yticks(np.arange(0, 250, 25))
     plt.title(args.title)
     plt.legend()
 

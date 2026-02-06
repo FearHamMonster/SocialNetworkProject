@@ -12,7 +12,7 @@ alpha_LIST="0 0.5 1"
 # Realistic dataset and graph
 for n in $n_LIST; do
  for alpha in $alpha_LIST; do
-  python -m "analysis_files.queryAnalysis" --n $n --k 3 --csv $CSV_FILE --real-dataset True --graph-type 0 --alpha $alpha --repetitions 100
+  python -m "analysis_files.queryAnalysis" --n $n --k 3 --csv $CSV_FILE --real-dataset True --graph-type 0 --alpha $alpha --queries 100 --seed 42 --print False
  done
 done
 
@@ -23,7 +23,7 @@ python -m "plotting_files.plotQueryResults" --csv $CSV_FILE --title "Realistic "
 # Unrealistic dataset and graph
 for n in $n_LIST; do
  for alpha in $alpha_LIST; do
-  python -m "analysis_files.queryAnalysis" --n $n --k 3 --csv $CSV_FILE --real-dataset False --random-values True --graph-type 0 --alpha $alpha --repetitions 100
+  python -m "analysis_files.queryAnalysis" --n $n --k 3 --csv $CSV_FILE --real-dataset False --random-values True --graph-type 0 --alpha $alpha --queries 100 --seed 42 --print False
  done
 done
 

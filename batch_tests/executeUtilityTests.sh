@@ -12,7 +12,7 @@ alpha_LIST="0 0.5 1"
 # Realistic dataset and graph
 for k in $k_LIST; do
  for alpha in $alpha_LIST; do
-  python -m "analysis_files.utilityAnalysis" --n 500 --k $k --csv $CSV_FILE --real-dataset True --graph-type 0  --p 0.4 --alpha $alpha --seed 42
+  python -m "analysis_files.utilityAnalysis" --n 500 --k $k --csv $CSV_FILE --real-dataset True --graph-type 0  --p 0.4 --alpha $alpha --seed 42 --print False
  done
 done
 
@@ -23,7 +23,7 @@ python -m "plotting_files.plotUtilityResults" --csv $CSV_FILE --title "p=0.4"
 # Realistic dataset and graph
 for k in $k_LIST; do
  for alpha in $alpha_LIST; do
-  python -m "analysis_files.utilityAnalysis" --n 500 --k $k --csv $CSV_FILE --real-dataset True --graph-type 0 --p 0.95 --alpha $alpha --seed 42
+  python -m "analysis_files.utilityAnalysis" --n 500 --k $k --csv $CSV_FILE --real-dataset True --graph-type 0 --p 0.95 --alpha $alpha --seed 42 --print False
  done
 done
 
