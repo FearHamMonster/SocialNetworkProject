@@ -58,7 +58,7 @@ pip install -r requirements.txt
     - queryAnalysis: measures the percentage of wrong queries on the anonymized dataset
 
 Each of these files takes a list of parameters, they can be viewed with:
-```python 
+```bash 
 python -m analysis_files.some_file_inside --help 
 ```
 The --print parameter is automatically set on "True", and for the purpose of single use tests, it's important
