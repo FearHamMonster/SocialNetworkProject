@@ -45,6 +45,10 @@ source venv/bin/activate   # Linux/macOS
 pip install -r requirements.txt  
 ```
 
+# Slides 
+The slides that discuss the analysis of the project are found in 
+https://docs.google.com/presentation/d/12mmCoUri2qxXPi8Uhh5uqPxC353_enuRwPkkrUUDZDg/edit?usp=sharing
+
 # Usage
 ## Single Use Test
 - Each of the files in analysis_files analyse different aspects of the algorithm
