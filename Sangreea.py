@@ -25,6 +25,9 @@ def main():
         G = graphgen.generate_ErdosRenyi_graph(args.n, args.avarage_degree, from_dataset=args.real_dataset, random_values=args.random_values, seed=args.seed)
     else:
         logging.error("graph type must be either 0 or 1")
+
+    if args.n <= 0 or args.alpha < 0 or args.avarage_degree < 0 or args.p < 0 or args.k <= 1:
+        raise ValueError("values can't be negative and k must be >= 2")
         
     anon.SaNGreeA(G, args.k, attributes_type, gen_trees, alpha=args.alpha, beta=1-args.alpha, show_graphs=args.show_graphs)
     
