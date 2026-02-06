@@ -1,10 +1,7 @@
 # SAnGreeA
 
-
-
 ## Requisites
 - Python 3.12
-
 
 ## Description
 SAnGreeA is a graph clusterization k-anonymization greedy algorithm, that executes in quadratic time.
@@ -24,8 +21,7 @@ Each cluster in the final masked graph is represented as a node, which is labele
 cluster size and intra cluster edges, and clusters are connected by edges labaled with their inter-cluster 
 number (of course, if this number is at least 1).
 
-Sangreea.py executes this algorithm: to indicate the various parameters (like graph type, number of nodes...)
-execute 
+Sangreea.py executes this algorithm: to know what are the various parameters (like graph type, number of nodes...) execute 
 ```bash
     python -m Sangreea --help
 ```  
@@ -35,7 +31,7 @@ SaNGreeA takes two additional parameters, alpha and beta, which always add up to
 that regulates the generalization information loss (NGIL), whereas beta is a number that regulates the strucutral information loss (NSIL). It's sufficient to specify alpha, since beta is always 1-alpha.
 The higher alpha is, the more NGIL is minimized 
 The higher beta is, the more NSIL is minimized
-It's automatically set as 0.5 as that represents the most balanced trade-off.
+It's automatically set as 0.5, as that represents the most balanced trade-off.
 
 ## Installation
 ```bash
@@ -76,9 +72,9 @@ and when all the analysis is done, the correct plotting file is called, and the 
 
 ## Plotting Files
 In the folder "plotting_files", there are the python files that are used to save on disk the plots generated
-from the analysis done by files in folder "analysis_files". These files take what's on the respective csv file
-and save the plot in the folder "csv". If one wants to view the plot, instead of saving it on disk, it's
-sufficient to run the plotting file with the parameter --plot True. 
+from the data in the respective csv file. These files are callable with the 
+same format "-python -m ... --help" described earlier.
+If one wants to view the plot, instead of saving it on disk, it's sufficient to run the plotting file with the parameter --plot True. 
 
 ## Other Files
 - The remaining files and their role:
