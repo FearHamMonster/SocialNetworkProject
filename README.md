@@ -26,7 +26,7 @@ number (of course, if this number is at least 1).
 
 Sangreea.py executes this algorithm: to indicate the various parameters (like graph type, number of nodes...)
 execute 
-```python
+```bash
     python -m Sangreea --help
 ```  
 And each parameter and its meaning will be explained.
@@ -75,7 +75,10 @@ The already existing plots in the plots folder are the results of executing each
 - The remaining files and their role:
     - anon.py: the library that includes every funcionality necessary for Sangreea to work
     - dataSetUtils.py: library used to infer the empirical distribution of the original dataset
-    - downloadDataSet.py: file that downloads the dataset, can be called simply with "python -m downloadDataSet"
+    - downloadDataSet.py: file that downloads the dataset, can be called simply with 
+    ```bash
+    python -m downloadDataSet
+    ```
     - dataSetHierarchies.py: here each attribute is defined as either numerical or categorical, and the relative generalization tree for each attribute   
     - getQITrees.py: here is when all the trees for categorical attributes are manually defined
     - GraphUtilities.py: small library for viewing graphs
