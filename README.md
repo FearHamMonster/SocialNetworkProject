@@ -26,9 +26,9 @@ number (of course, if this number is at least 1).
 
 Sangreea.py executes this algorithm: to indicate the various parameters (like graph type, number of nodes...)
 execute 
-'''python
+```python
     python -m Sangreea --help
-'''  
+```  
 And each parameter and its meaning will be explained.
 
 SaNGreeA takes two additional parameters, alpha and beta, which always add up to 1. Alpha is a constant
