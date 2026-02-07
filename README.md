@@ -67,10 +67,14 @@ to leave it True.
 ## Multiple Tests
 To automatically execute tests in batch with predefined values, simply execute the batch files in batch_tests,
 (they each will take several minutes unless parameters are manually changed inside).
-These batch tests will automtically save the results as plots, saved in the plots directory.
+These batch tests will automtically save the results as plots "plots" directory.
 
 The already existing plots in the plots folder are the results of executing each of the batch tests.
 
+To execute these files, follow this format:
+```bash 
+    batch_tests/executeTimeTests.sh 
+```
 What these batch files do exatcly is, they call the analysis file, which saves the result in the right csv file,
 and when all the analysis is done, the correct plotting file is called, and the plots are saved on disk
 
