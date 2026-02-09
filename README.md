@@ -53,9 +53,9 @@ https://docs.google.com/presentation/d/12mmCoUri2qxXPi8Uhh5uqPxC353_enuRwPkkrUUD
 
 ## Dataset
 The dataset used for creating synthetic data is csv/adult.csv, if one wishes to download it again it's sufficient to call
-    ```bash
-    python -m downloadDataSet
-    ```
+```bash
+python -m downloadDataSet
+```
 
 ## Single Use Test
 - Each of the files in analysis_files analyse different aspects of the algorithm
