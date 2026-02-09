@@ -40,7 +40,7 @@ def main():
             writer = csv.writer(f)
             writer.writerow([args.k, args.alpha, nsil, ngil])  
     else:
-        print("k = ", args.k, " alpha = ", args.alpha, " nsil = ", nsil, " nsil = ", ngil)
+        print("k = ", args.k, " alpha = ", args.alpha, " nsil = ", nsil, " ngil = ", ngil)
     
     
 

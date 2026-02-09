@@ -50,6 +50,13 @@ The slides that discuss the analysis of the project are found in
 https://docs.google.com/presentation/d/12mmCoUri2qxXPi8Uhh5uqPxC353_enuRwPkkrUUDZDg/edit?usp=sharing
 
 # Usage
+
+## Dataset
+The dataset used for creating synthetic data is csv/adult.csv, if one wishes to download it again it's sufficient to call
+    ```bash
+    python -m downloadDataSet
+    ```
+
 ## Single Use Test
 - Each of the files in analysis_files analyse different aspects of the algorithm
     - time_analysis: measures how much the algorithm takes to execute (calculated on an avarage)
